@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_composto_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_composto_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_de_um_fazendeiro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_de_um_fazendeiro">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_fazenda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_um -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#eh_um">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerencia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_fazenda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_fazenda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_gado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_gado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_preco -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#possui_preco">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#leite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#preco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#produz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#produz">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#leite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#trabalha_com -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#trabalha_com">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#trabalha_em -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#trabalha_em">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_fazenda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_fazenda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_gado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_gado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_vaca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#id_vaca"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#nome"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazendeiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazendeiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazendeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#leite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#leite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#preco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#preco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#producao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#producao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazendeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazendeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#fazenda"/>
+        <id_fazenda rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAZENDA_01</id_fazenda>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gado"/>
+        <eh_composto_por rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca01"/>
+        <eh_composto_por rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca02"/>
+        <id_gado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GADO_01</id_gado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#gerente"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberto</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#proprietario"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedro</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca"/>
+        <id_vaca rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VACA_01</id_vaca>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaca"/>
+        <id_vaca rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VACA_02</id_vaca>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinicius/ontologies/2021/10/untitled-ontology-4#vaqueiro"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joao</nome>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
